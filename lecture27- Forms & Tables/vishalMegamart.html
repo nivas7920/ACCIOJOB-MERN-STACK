@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    
+     <br/>
+    <br/>
+    <br/>
+    <br/>
+    <form novalidate>
+        <div>
+            <label for="name">Name </label>
+            <input 
+            type="text"
+            name="name"
+            placeholder="enter your full name"
+            required autocomplete="name"
+            />
+        </div>
+         <div>
+        <label for="phone">Phone Number</label>
+        <input 
+        id="phone" 
+        type="number"
+        name="phone" 
+        placeholder="enter without country code"
+        required autocomplete="number"
+        />
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input 
+        id="email" 
+        type="email" 
+        name="email"
+        placeholder="enter your email"
+        required autocomplete="email"
+        />
+        </div>
+        <div>
+        <label for="lacation">Location</label>
+        <select name="location" id="location">
+            <option value="">select location</option>
+            <option value="BA">Baner</option>
+            <option value="VN">Viman Nagar</option>   
+            <option value="HD">Hadapsar</option> 
+            <option value="HW">Hinjewadi</option>         
+        </select>
+        </div>
+        <div>
+            <label for="resume">resume file upload</label>
+            <input type="file" 
+            id="resume"
+            placeholder="upload your updated resume"
+            required autocomplete="file"            
+            />
+        </div>
+        <div>
+            <label for="salary">Expected Salary </label>
+            <input 
+            type="number"
+            id="salary"
+            placeholder="enter your expected salary"
+            required autocomplete="number"
+            />
+        </div>
+         <div>
+            <label for="ctc">current ctc </label>
+            <input 
+            type="number"
+            id="ctc"
+            placeholder="enter the annual package"
+            required autocomplete="number"
+            />
+        </div>
+        <div>
+            <label for="radio" id="prevExp">Previous Experience</label>
+            <input type="radio" name="prevExp"/>Fresher
+            <input type="radio" name="prevExp"/>One year Experience
+            <input type="radio" name="prevExp"/>Two Year Experience
+        </div>
+        <div>
+        <label for="radio" id="shift">Shift Preference </label>
+        <input type="radio" name="shift"/> Night Shift
+        <input type="radio" name="shift"/> Morning Shift
+        <input type="radio" name="shift"/> both
+        </div>
+        <div>
+            <label for="joiningDate"> Earliest joining Date</label>
+            <input 
+            type="date" 
+            id="date"
+            name="date"/>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</main>
+</body>
+</html>

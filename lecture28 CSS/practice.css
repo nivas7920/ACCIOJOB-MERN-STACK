@@ -1,0 +1,90 @@
+/* 
+Universal selector (*) applies style to all elements 
+*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box; /* helps keep size consistent */
+}
+
+/*
+Center the card on the screen using flexbox
+*/
+body {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  height: 100vh;           /* take full screen height */
+  background-color: #f2f7f5; /* light background */
+}
+
+/*
+Style the main card container
+*/
+#card {
+  border: 2px solid #91c483;  /* soft green border */
+  background-color: #eaffea;  /* light green background */
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* small shadow */
+  text-align: center; /* center text inside */
+}
+
+/*
+Main heading
+*/
+h1 {
+  text-align: center;
+  color: #37795f;
+}
+
+/*
+Image styling
+*/
+img {
+  display: block;        /* ensures margin works */
+  margin: 0 auto;        /* centers image horizontally */
+  border-radius: 50%;    /* makes it circular */
+  margin-top: 10px;
+}
+
+/*
+Name heading
+*/
+h2 {
+  text-decoration: underline;
+  color: #2f5d50;
+}
+
+/*
+Paragraph inside card
+*/
+div p {
+  margin: 10px;
+}
+
+/*
+Special ID selector for position text
+*/
+#position {
+  font-weight: bold;
+  color: #366e4f;
+}
+
+/*
+Button styling
+*/
+button {
+  margin: 15px 0 20px 0;
+  background-color: #a2e3b1;
+  border: 1px solid #366e4f;
+  border-radius: 5px;
+  padding: 8px 25px;
+  cursor: pointer;
+}
+
+/*
+Add hover effect to button
+*/
+button:hover {
+  background-color: #91c483;
+}

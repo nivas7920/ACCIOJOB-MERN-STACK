@@ -1,0 +1,49 @@
+:root{
+    --btn-color: blue;
+    --bg-color: yellow;
+    --default-color: green;
+
+}
+* {
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+}
+.navbar a {
+    margin: 10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: green;
+    
+
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+.card {
+    flex: 0 0 250px;
+    border-radius: 60px;
+    box-shadow: -6px 50px 15px rgb(10, 10, 10);
+    display: flex;
+    float: right;
+    flex-direction: column-reverse;
+    flex-wrap: initial;
+    justify-content: space-around;
+    align-items: end;
+    
+}
+.card img{
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}

@@ -1,0 +1,73 @@
+ :root {
+    --btn-color: lightgreen;
+    --bg-color:  pink;
+    --default-color: rgb(0, 255, 200);
+
+ }
+ *{
+    box-sizing: border-box;
+    /*background-color: var(--bg-color);*/
+ }
+ body {
+  background-color: var(--bg-color);  
+}
+ .navbar a {
+    margin: 10px 30px;
+    text-decoration: none;
+    font-size:large;
+    font-weight: 500;
+    color:darkblue;
+ }
+ .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 10px;
+
+ }
+ /* .card {
+    flex: content;
+    border-radius: 50%;
+    box-shadow: -5px 50px 15px rgb(70, 50, 25);
+    display: flex;
+    float: right;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .card img {
+    width: 10%;
+
+ } */
+  .card {
+  width: 250px;  
+  border-radius: 50px;  
+  box-shadow: -5 5px 15px rgba(10, 0, 0, 0);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  gap: none;
+  background-color: antiquewhite;
+}
+
+.card img {
+  width: 100%; 
+  border-radius: 100px;
+  flex: content; 
+}
+
+ .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    font-size:small;
+ }
