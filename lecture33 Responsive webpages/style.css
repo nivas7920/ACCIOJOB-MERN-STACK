@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 500px;
+}
+/* 
+div{
+    text-align: center;
+}
+div > div {
+
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background-color: aquamarine;
+
+}
+
+.linear div:nth-of-type(1){
+    background: linear-gradient(rgb(208, 58, 58), blue);
+}
+.linear div:nth-of-type(2){
+    background: linear-gradient(to right, blue, yellow, orange);
+}
+.linear div:nth-of-type(3){
+    background: linear-gradient(150deg, pink, yellow,green);
+}
+
+.radial div:nth-of-type(1){
+    background: radial-gradient(red, blue);
+}
+
+.radial div:nth-of-type(2){
+    background: radial-gradient(closest-side, orange,green);
+}
+.radial div:nth-of-type(3){
+    background: radial-gradient(farthest-side, red,green,blue );
+}
+.conic div:nth-of-type(1){
+    background: conic-gradient(red, blue, orange,green);
+}
+.conic div:nth-of-type(2){
+    background: conic-gradient(green, red, pink);
+}
+.conic div:nth-of-type(3){
+    background: conic-gradient(red, blue, orange);
+} */
+
+div > div {
+    width: 300px;
+    height: 400px;
+    background-color: yellow;
+    margin: 100px auto;
+}
+div > div:last-child{
+    background-color: brown;
+}
+
+.child:active{
+   background-color: aquamarine;
+}
+
+.child:hover{
+    background-color: blueviolet;
+}
+
+.elements p::before{
+    content: "Nivas";
+}
+
+
+.elements p::first-letter{
+    content: " ";
+    color: red;
+}
+
+.elements p::first-line{
+    content: " ";
+    color:green;
+}
