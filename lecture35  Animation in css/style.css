@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    /* flex-direction:column;
+    justify-content: end; */
+    background-color: blueviolet;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 30px;
+    border-radius: 50px;
+    background-color:orange;
+    position:absolute;
+    left: 5%;
+    bottom: 5%;
+
+    
+    
+}
+body:hover .box {
+    left: 100%;
+    bottom: 100%;
+}
+
+.transition {
+    transition-property: all;
+    transition-duration: 3s;
+}
+

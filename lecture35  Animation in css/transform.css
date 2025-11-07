@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    padding: 100px;
+}
+
+.container .box {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50px;
+    background-color: aqua;
+    text-align: center;
+    border: solid black;
+
+}
+
+body:hover .box {
+    /* width: 500px;
+    background-color: blueviolet; */
+    transform: scale(0.4, 1.5); /* 0.4 gets applied in x-horizontally & 1.5 gets applied in y axis vertically */
+    /* transform: rotate(0.5turn);   
+    transform: rotate(45deg);  /* will rotate clockwise */
+    transform: rotate(-45deg);/* will rotate Anticlockwise */
+    transform: rotate(-0.5turn);  /* 1turn = 360 deg */
+
+
+    transform: skew(45deg);
+    transform: skew(30deg,45deg);
+
+    transform: translate(100%);
+
+    /* 
+       For translate
+      X  -> -ve ==> then it means left
+       X  -> +ve => then it means right
+      Y   -> -ve ==> then it means down 
+       Y ->  +ve => then it means up
+
+    */
+
+    /* Note : we can combine all the transform attributes */
+
+    transform: translate(200px) rotate(90deg);
+    
+    transform: rotate(90deg) translate(200px);
+
+
+}
