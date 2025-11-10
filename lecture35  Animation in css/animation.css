@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    background-color: blueviolet;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 30px;
+    border-radius: 50px;
+    background-color:orange;
+    position:relative;
+    display:inline-block;
+    top: 200px;
+    margin: 0 auto;
+    animation: Nivas 2s linear infinite ;
+    animation-name: Nivas;
+    animation-duration: 2s;
+    
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    /* left: 50%;
+
+    right: 50%; */
+    
+
+
+
+}
+.animation1{
+    animation-delay: 2s;
+}
+.animation2{
+    animation-delay: 3s;
+}
+.animation3{
+    animation-delay: 4s;
+}
+.animation4{
+    animation-delay: 5s;
+}
+.animation5{
+    animation-delay: 6s;
+}
+
+
+@keyframes Nivas{
+     from{
+        transform: translate(0);
+     }
+     to{
+        transform: translateY(-200px);
+     }
+}
