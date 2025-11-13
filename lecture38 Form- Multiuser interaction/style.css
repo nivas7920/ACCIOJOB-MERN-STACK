@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.outer-div{
+
+   
+    border:5px solid black;
+    padding: 40px;
+    background-color: antiquewhite;
+
+}
+.inner-div {
+    border: 5px solid black;
+    
+    padding: 5px;
+    background-color: aquamarine;
+
+}
+
+h1{
+    border: 5px solid black;
+    margin: 100px;
+    padding: 5px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
