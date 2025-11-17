@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Delicious Recipe Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-text">
+          <div class="title">My Recipe Blog</div>
+          <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#subscribe">Subscribe</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-inner">
+        <h2 class="eyebrow">Cook. Eat. Repeat.</h2>
+        
+        <p class="lead">Easy &amp; tasty recipes for everyday food lovers 
+      </div>
+    </div>
+  </header>
+
+
+
+  <main class="container">
+    
+    <section id="recipes" class="recipe-section">
+      <h3 class="section-title">Recipe of the Day: Paneer Butter Masala</h3>
+
+      <div class="recipe-card">
+        <div class="recipe-media">
+
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a0b6f06f26705f3c9f8b3a0975b8d9d"
+               alt="" />
+        </div>
+
+        <div class="recipe-content">
+          <div class="ingredients-block card-block">
+            <h4>Ingredients</h4>
+            <ul class="ingredients">
+              <li>200g Paneer</li>
+              <li>2 Tomatoes</li>
+              <li>1 Onion</li>
+              <li>Butter, Spices, Cream</li>
+            </ul>
+          </div>
+
+          <div class="steps-block card-block">
+            <h4>Steps</h4>
+            <ol class="steps">
+              <li>Saute onion &amp; tomatoes.</li>
+              <li>Add spices &amp; blend.</li>
+              <li>Add paneer &amp; cream.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="nutrition-section">
+        <h4>Nutrition Info</h4>
+        <table class="nutrition-table" aria-describedby="nutrition">
+          <thead>
+            <tr>
+              <th>Nutrient</th>
+              <th>Amount</th>
+              <th>Daily %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Calories</td>
+              <td>320</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td>18g</td>
+              <td>18%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+    <section id="gallery" class="gallery-section">
+      <h3 class="section-title">Food Gallery</h3>
+      <div class="gallery-row">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" alt=""></div>
+        <div class="gallery-item"><img src="https://thumbs.dreamstime.com/b/fast-food-menu-chicken-nuggets-hamburger-french-fries-33671451.jpg?w=768" alt=""></div>
+        <div class="gallery-item"><img src="https://sherohomefood.in/wp-content/uploads/2021/05/SHF_home-slide-1.jpg" alt=""></div>
+        <div class="gallery-item"><img src="https://img.freepik.com/free-photo/top-view-fast-food-mix-mozzarella-sticks-club-sandwich-hamburger-mushroom-pizza-caesar-shrimp-salad-french-fries-ketchup-mayo-cheese-sauces-table_141793-3998.jpg?semt=ais_hybrid&w=740&q=80" alt=""></div>
+      </div>
+    </section>
+
+  
+    <section id="subscribe" class="subscribe-section">
+      <h3 class="section-title">Subscribe for Daily Recipes</h3>
+      <form class="subscribe-form">
+        <label class="sr-only" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <button class="btn-sub" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 My Recipe Blog | Cook with </div>
+    </div>
+  </footer>
+</body>
+</html>

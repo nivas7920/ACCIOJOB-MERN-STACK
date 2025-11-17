@@ -1,0 +1,253 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+}
+
+
+.site-header {
+  background: linear-gradient(90deg, #ff8a65, #ff6b35);
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+
+.header-inner {
+  width: 960px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: space-between;  
+  align-items:center;
+
+}
+
+
+
+.brand-text .title {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.main-nav {
+  display: flex;
+  align-items: end;
+ 
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+
+  margin-left: 25px;  
+}
+
+
+.hero {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.hero .lead {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+.container {
+  width: 960px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.section-title {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.recipe-card {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f7f7f7;
+  border: 1px solid #eee;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipe-media {
+  width: 200px;
+}
+
+.recipe-media img {
+  width: 200px;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recipe-content {
+  width: 100%;
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+.card-block {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.card-block h4 {
+  margin-top: 0;
+}
+
+.ingredients {
+  margin-left: 20px;
+}
+
+.steps {
+  margin-left: 20px;
+}
+
+
+
+.nutrition-section {
+  margin-top: 20px;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.nutrition-table th {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.nutrition-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.gallery-row {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 200px;
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.subscribe-form {
+
+  margin-top: 15px;
+}
+
+.subscribe-form input {
+  width: 250px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-sub {
+  padding: 10px 20px;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.site-footer {
+  margin-top: 40px;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 520px) {
+
+  .header-inner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .brand-text .title {
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+  }
+
+  .btn-sub {
+    width: 100%;
+  }
+}

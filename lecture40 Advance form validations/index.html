@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="password">
+    <br><br>
+    <input type="date">
+    <br><br>
+    <input type="time">
+    <br>
+    <br>
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <br>
+    <input name="mcq" type="radio" value="A">
+    <input  name="mcq" type="radio" value="B">
+    <input  name="mcq" type="radio" value="C">
+    <input  name="mcq" type="radio" value="D">
+    <br>
+    <input  name="mcq2" type="radio" value="E">
+    <input name="mcq2"  type="radio"value="F">
+    <input  name="mcq2" type="radio" value="F">
+    <input  name="mcq2" type="radio" value="G">
+    <br>
+
+    <select name="" id="">
+        <option value="">Select option </option>
+        <option>A</option>
+         <option>B</option>
+          <option>C</option>
+           <option>D</option>
+    </select>
+    <br>
+
+    
+    <select name="" id="" multiple="true" size="4">
+        <option value=""> Multipal Select</option>
+        <option>A</option>
+         <option>B</option>
+          <option>C</option>
+           <option>D</option>
+    </select>
+    <br>
+
+    <input type="file" name="" id="">
+
+    <button>Submit</button>
+
+
+    <script>
+    const submitBtn = document.querySelector("button")
+    submitBtn.addEventListener(("click"), () => {
+
+
+        const obj = {};
+
+        obj.password = document.querySelector("[type=password]").value;
+        obj.date = document.querySelector("[type=date]").value;
+        // obj.date=new Date(document.querySelector("[type=date]").value);
+        obj.check = document.querySelectorAll("[type=checkbox]:checked");
+        obj.radio = document.querySelectorAll("[type=radio]:checked")
+        obj.time = document.querySelector("[type=time]").value;
+        
+
+
+        obj.selected= document.querySelector("select");
+        obj.multiselected =document.querySelector("[multiple=true]")   
+        
+
+
+     const array = [1, 2, 3,4 ,5];
+     console.log({array});
+
+     console.log({multiselected: Array.from(obj.multiselected)         
+                                     .filter(option =>option.selected)
+                                     .map( option =>option.value)});
+
+        
+    console.log(obj);
+ 
+
+    // file Reader => api reading the file
+    // Data URL 
+    // obj.file = document.querySelector("[type=]")
+
+
+    // onchage event  trigger => jab element out of focus jata hai & value must be change & enter 
+    // input event  trigger => event actual mai key press hone ke baad
+    // real time validations 
+    // 3. blur event 
+    // 4. focus event 
+
+    })
+</script>
+</body>
+
+
+
+
+
+</html>
