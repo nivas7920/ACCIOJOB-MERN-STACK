@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Form</h2>   
+    <div class="form">
+         <div class="form-step" id="ctn1">
+            <h3>1. Basic Details</h3>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Phone">
+            
+            <button id="btn1">Next</button>
+        </div>
+
+        
+      <div class="form-step" id="ctn2">
+            <h3>2. Education</h3>
+            <input type="text" placeholder="Degree">
+            <input type="text" placeholder="College">
+            <input type="text" placeholder="Year of Passing">
+            <button id="btnBack" >Prev</button>
+            <button id="btn2">Next</button> 
+        </div> 
+
+       
+        <div class="form-step" id="ctn3">
+            <h3>3. Internship</h3>
+            <input type="text" placeholder="Company Name">
+            <input type="text" placeholder="Role">
+            <input type="text" placeholder="Duration">
+            <button id="btnBack">Back</button>
+            <button type="submit">Submit</button>
+        </div> 
+    </div>   
+       
+
+
+   <script src="script.js"></script>
+</body>
+</html>

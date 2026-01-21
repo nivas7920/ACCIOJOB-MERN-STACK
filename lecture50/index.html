@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Session</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="container">
+    <h1>Smart Study Session App</h1>
+
+    <form>
+      <label>Session Name</label>
+      <input type="text" id="SessionName" />
+
+      <label>Study Duration (minutes)</label>
+      <input type="number" id="StudyDuration" />
+
+      <label>Break Duration (minutes)</label>
+      <input type="number" id="BreakDuration" />
+
+      <label>Study Cycles</label>
+      <input type="number" id="SessionNumber" />
+
+      <p id="error"></p>
+
+      <button id="btn" disabled>Start Session</button>
+    </form>
+  </div>
+
+
+  <div id="dashboard" style="display:none;">
+    <h2 id="phase">Studying...</h2>
+    <div id="timer">00:00</div>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <p id="cycle">Cycle 1 of 1</p>
+
+    <button id="pause">Pause</button>
+    <button id="resume" style="display:none;">Resume</button>
+  </div>
+
+
+
+   <p id="quote" ></p>
+
+   <p id="saveStatus"></p>
+ 
+  
+
+   
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

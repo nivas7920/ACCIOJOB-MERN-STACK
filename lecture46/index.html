@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recipe Roulette 🍳</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Recipe Roulette 🍳</h1>
+   
+  </header>
+
+  <main class="container">
+    
+    <section class="card form-card">
+      <h2>Add New Recipe</h2>
+      <form id="recipeForm" novalidate>
+      
+        <div class="form-group">
+          <label for="name">Recipe Name *</label>
+          <input type="text" id="name" name="name" />
+          <small class="error" id="nameError"></small>
+        </div>
+
+      
+        <div class="form-group">
+          <label for="ingredients">Ingredients *</label>
+          <textarea id="ingredients" name="ingredients" rows="3"></textarea>
+          <small class="error" id="ingredientsError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Cooking Time (minutes) *</label>
+          <input type="number" id="time" name="time" min="5" />
+          <small class="error" id="timeError"></small>
+        </div>
+
+           <div class="form-group">
+          <span>Difficulty *</span>
+          <div class="inline-group">
+            <label>
+              <input type="radio" name="difficulty" value="Easy" />
+              Easy
+            </label>
+            <label>
+              <input type="radio" name="difficulty" value="Medium" />
+              Medium
+            </label>
+            <label>
+              <input type="radio" name="difficulty" value="Hard" />
+              Hard
+            </label>
+          </div>
+          <small class="error" id="difficultyError"></small>
+        </div>
+
+       
+        <div class="form-group">
+          <span>Category (select at least one) *</span>
+          <div class="inline-group">
+            <label>
+              <input type="checkbox" name="category" value="Breakfast" />
+              Breakfast
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="Lunch" />
+              Lunch
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="Dinner" />
+              Dinner
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="Snack" />
+              Snack
+            </label>
+          </div>
+          <small class="error" id="categoryError"></small>
+        </div>
+
+        <button type="submit" id="submitBtn" class="primary-btn" disabled>
+          Add Recipe
+        </button>
+      </form>
+    </section>
+
+    
+    <section class="card">
+      <h2>All Recipes</h2>
+      <div id="allRecipes" class="recipes-container">
+     
+      </div>
+      <p class="empty-text" id="allEmpty">No recipes yet. Add one above!</p>
+    </section>
+
+       <section class="card">
+      <h2>Favorites ⭐</h2>
+      <div id="favoriteRecipes" class="recipes-container">
+        
+      </div>
+      <p class="empty-text" id="favEmpty">No favorites yet.</p>
+    </section>
+
+   
+    <section class="card">
+      <h2>Recently Cooked (Last 5)</h2>
+      <div id="recentRecipes" class="recipes-container">
+       
+      </div>
+      <p class="empty-text" id="recentEmpty">
+        Nothing cooked yet. Spin the wheel or click "Cook This!".
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> 
